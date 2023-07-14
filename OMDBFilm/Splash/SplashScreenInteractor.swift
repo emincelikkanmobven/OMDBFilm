@@ -7,9 +7,11 @@
 
 import Foundation
 import Alamofire
+import FirebaseRemoteConfig
 
 protocol SplashScreenBusinessLogic: AnyObject {
     func checkConnectionStatus()
+    func getConfigText()
 }
 
 protocol SplashScreenDataStore: AnyObject {
@@ -22,6 +24,20 @@ final class SplashScreenInteractor: SplashScreenBusinessLogic, SplashScreenDataS
     var worker: SplashScreenWorkingLogic = SplashScreenWorker()
     var networkManager = NetworkReachabilityManager()
     
+    func getConfigText() {
+        let remoteConfig = RemoteConfig.remoteConfig()
+        remoteConfig.fetch { status, error in
+            if status == .success {
+                remoteConfig.activate { [weak self] changed, error in
+                    guard let self else { return }
+                    let remoteConfigText = remoteConfig.configValue(forKey: "splashText").stringValue ?? "Loodos default text"
+                    self.presenter?.presentConfigText(remoteConfigText)
+                }
+            } else {
+                self.presenter?.presentErrorWithMessage(error?.localizedDescription ?? "RemoteConfig failed.")
+            }
+        }
+    }
     
      func checkConnectionStatus() {
         if networkManager?.isReachable ?? false {
