@@ -10,6 +10,7 @@ import Foundation
 protocol SplashScreenPresentationLogic: AnyObject {
     func presentErrorWithMessage(_  message: String)
     func presentHomePage()
+    func presentConfigText(_ text: String)
 }
 
 final class SplashScreenPresenter: SplashScreenPresentationLogic {
@@ -24,5 +25,9 @@ final class SplashScreenPresenter: SplashScreenPresentationLogic {
         viewController?.displayHomePage()
     }
     
+    func presentConfigText(_ text: String) {
+        viewController?.displayConfigText(text)
+    }
+
     
 }
