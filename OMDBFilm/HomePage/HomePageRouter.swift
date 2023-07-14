@@ -11,7 +11,7 @@ protocol HomePageRoutingLogic: AnyObject {
     
 }
 
-protocol HomePageDataPassing: class {
+protocol HomePageDataPassing: AnyObject {
     var dataStore: HomePageDataStore? { get }
 }
 
