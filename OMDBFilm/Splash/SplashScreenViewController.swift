@@ -10,10 +10,12 @@ import UIKit
 protocol SplashScreenDisplayLogic: AnyObject {
     func displayHomePage()
     func displayErrorWithMessage(_ message: String)
+    func displayConfigText(_ text: String)
 }
 
 final class SplashScreenViewController: UIViewController {
     
+    @IBOutlet var splashTextLabel: UILabel!
     var interactor: SplashScreenBusinessLogic?
     var router: (SplashScreenRoutingLogic & SplashScreenDataPassing)?
 
@@ -32,6 +34,7 @@ final class SplashScreenViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        setupUI()
         interactor?.checkConnectionStatus()
     }
     
@@ -48,11 +51,20 @@ final class SplashScreenViewController: UIViewController {
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
-        
+    }
+    
+    private func setupUI() {
+        interactor?.getConfigText()
     }
 }
 
 extension SplashScreenViewController: SplashScreenDisplayLogic {
+    func displayConfigText(_ text: String) {
+        DispatchQueue.main.async {
+            self.splashTextLabel.text = text
+        }
+    }
+    
     func displayErrorWithMessage(_ message: String) {
         //TODO: This will changed to the Alert
         print("Error Occured")

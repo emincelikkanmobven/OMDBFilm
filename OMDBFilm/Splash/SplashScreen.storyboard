@@ -30,6 +30,9 @@
                             <constraint firstItem="Ky0-qZ-DbF" firstAttribute="centerX" secondItem="acR-sl-ate" secondAttribute="centerX" id="iWg-CY-dpS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="splashTextLabel" destination="Ky0-qZ-DbF" id="Q2I-0T-GCm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZo-gs-e4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
