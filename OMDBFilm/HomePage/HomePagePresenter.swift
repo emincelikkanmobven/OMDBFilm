@@ -9,6 +9,8 @@ import Foundation
 
 protocol HomePagePresentationLogic: AnyObject {
     func presentLoader(hide: Bool)
+    func presentFilms(response: HomePage.Response)
+    func presentErrorWithMessage(_ message: String)
 }
 
 final class HomePagePresenter: HomePagePresentationLogic {
@@ -17,5 +19,32 @@ final class HomePagePresenter: HomePagePresentationLogic {
     
     func presentLoader(hide: Bool) {
         viewController?.displayLoader(hide: hide)
+    }
+    
+    func presentFilms(response: HomePage.Response) {
+        guard let filmResponse = response.response else {
+               return
+           }
+           
+           let filmsViewModel = HomePage.ViewModel.FilmViewModel(
+            title: filmResponse.title,
+            year: filmResponse.year,
+            rated: filmResponse.rated,
+            released: filmResponse.released,
+            genre: filmResponse.genre,
+            director: filmResponse.director,
+            ratings: filmResponse.ratings,
+            type: filmResponse.type,
+            poster: filmResponse.poster,
+            imdbRating: filmResponse.imdbRating,
+            metaScore: filmResponse.metascore,
+            plot: filmResponse.plot,
+            revenue: filmResponse.boxOffice
+           )
+           
+           viewController?.displayFilms(viewModel: filmsViewModel)
+    }
+    func presentErrorWithMessage(_ message: String) {
+        viewController?.displayErrorWithMessage(message)
     }
 }

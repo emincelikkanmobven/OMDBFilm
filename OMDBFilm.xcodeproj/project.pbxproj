@@ -54,6 +54,8 @@
 		440EF7872A62B5BA00A62A51 /* FilmsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */; };
 		440EF78A2A62BDC000A62A51 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF7892A62BDC000A62A51 /* Lottie */; };
 		440EF78C2A62BE2A00A62A51 /* popcornAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 440EF78B2A62BE2A00A62A51 /* popcornAnimation.json */; };
+		440EF7902A62D27000A62A51 /* FilmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF78F2A62D27000A62A51 /* FilmResponse.swift */; };
+		440EF7932A62E3BC00A62A51 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF7922A62E3BC00A62A51 /* AlamofireImage */; };
 		4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5952A6199B7009C0C7A /* AppDelegate.swift */; };
 		4431C5982A6199B7009C0C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5972A6199B7009C0C7A /* SceneDelegate.swift */; };
 		4431C59A2A6199B7009C0C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5992A6199B7009C0C7A /* ViewController.swift */; };
@@ -81,6 +83,7 @@
 		440EF7842A62B5BA00A62A51 /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
 		440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsTableViewCell.xib; sourceTree = "<group>"; };
 		440EF78B2A62BE2A00A62A51 /* popcornAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = popcornAnimation.json; sourceTree = "<group>"; };
+		440EF78F2A62D27000A62A51 /* FilmResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmResponse.swift; sourceTree = "<group>"; };
 		4431C5922A6199B7009C0C7A /* OMDBFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDBFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4431C5952A6199B7009C0C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4431C5972A6199B7009C0C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 				440EF7542A6203CE00A62A51 /* FirebaseAppCheck in Frameworks */,
 				440EF7782A6203CE00A62A51 /* FirebasePerformance in Frameworks */,
 				440EF76E2A6203CE00A62A51 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				440EF7932A62E3BC00A62A51 /* AlamofireImage in Frameworks */,
 				440EF76C2A6203CE00A62A51 /* FirebaseFunctionsCombine-Community in Frameworks */,
 				440EF75C2A6203CE00A62A51 /* FirebaseCrashlytics in Frameworks */,
 				440EF7722A6203CE00A62A51 /* FirebaseInstallations in Frameworks */,
@@ -169,6 +173,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		440EF78D2A62D24D00A62A51 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				440EF78E2A62D25500A62A51 /* Response */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		440EF78E2A62D25500A62A51 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				440EF78F2A62D27000A62A51 /* FilmResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		4431C5892A6199B7009C0C7A = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +209,7 @@
 		4431C5942A6199B7009C0C7A /* OMDBFilm */ = {
 			isa = PBXGroup;
 			children = (
+				440EF78D2A62D24D00A62A51 /* Networking */,
 				440EF7392A61A26200A62A51 /* HomePage */,
 				440EF72A2A619EC900A62A51 /* Splash */,
 				4431C5952A6199B7009C0C7A /* AppDelegate.swift */,
@@ -249,6 +270,7 @@
 				440EF77D2A6203CE00A62A51 /* FirebaseStorage */,
 				440EF77F2A6203CE00A62A51 /* FirebaseStorageCombine-Community */,
 				440EF7892A62BDC000A62A51 /* Lottie */,
+				440EF7922A62E3BC00A62A51 /* AlamofireImage */,
 			);
 			productName = OMDBFilm;
 			productReference = 4431C5922A6199B7009C0C7A /* OMDBFilm.app */;
@@ -282,6 +304,7 @@
 				440EF7272A619D2D00A62A51 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				440EF74A2A6203CE00A62A51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				440EF7882A62BDC000A62A51 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				440EF7912A62E3BC00A62A51 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 4431C5932A6199B7009C0C7A /* Products */;
 			projectDirPath = "";
@@ -326,6 +349,7 @@
 				440EF7462A61A27600A62A51 /* HomePageWorker.swift in Sources */,
 				4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */,
 				440EF7362A619EE500A62A51 /* SplashScreenModels.swift in Sources */,
+				440EF7902A62D27000A62A51 /* FilmResponse.swift in Sources */,
 				440EF7332A619EE500A62A51 /* SplashScreenViewController.swift in Sources */,
 				440EF7422A61A27600A62A51 /* HomePageViewController.swift in Sources */,
 				440EF7432A61A27600A62A51 /* HomePagePresenter.swift in Sources */,
@@ -576,6 +600,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		440EF7912A62E3BC00A62A51 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -723,6 +755,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 440EF7882A62BDC000A62A51 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		440EF7922A62E3BC00A62A51 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 440EF7912A62E3BC00A62A51 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
