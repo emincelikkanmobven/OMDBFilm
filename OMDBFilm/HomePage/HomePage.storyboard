@@ -16,17 +16,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HomePage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbW-3v-NRv">
-                                <rect key="frame" x="165" y="438" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMDBFilm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmJ-Dg-6QM">
+                                <rect key="frame" x="24" y="72" width="117" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OL-Yc-RL3">
+                                <rect key="frame" x="340" y="72" width="50" height="34"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bir Film Arayın" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pux-2V-wfE">
+                                <rect key="frame" x="24" y="118" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p2g-Q3-WrW">
+                                <rect key="frame" x="8" y="176" width="398" height="686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6OL-Yc-RL3" firstAttribute="centerY" secondItem="pmJ-Dg-6QM" secondAttribute="centerY" id="3RW-98-o00"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="Pux-2V-wfE" secondAttribute="trailing" constant="24" id="53j-aQ-ZQl"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="bottom" secondItem="p2g-Q3-WrW" secondAttribute="bottom" id="7yY-PE-NiM"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="6OL-Yc-RL3" secondAttribute="trailing" constant="24" id="Hkp-LY-xvp"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="p2g-Q3-WrW" secondAttribute="trailing" constant="8" id="KHR-EF-37X"/>
+                            <constraint firstItem="p2g-Q3-WrW" firstAttribute="top" secondItem="Pux-2V-wfE" secondAttribute="bottom" constant="24" id="RmW-6k-CuT"/>
+                            <constraint firstItem="Pux-2V-wfE" firstAttribute="top" secondItem="6OL-Yc-RL3" secondAttribute="bottom" constant="12" id="SMt-ah-alF"/>
+                            <constraint firstItem="pmJ-Dg-6QM" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="24" id="VqY-zR-i2M"/>
+                            <constraint firstItem="p2g-Q3-WrW" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="8" id="ZKa-Go-uo5"/>
+                            <constraint firstItem="Pux-2V-wfE" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="24" id="pwd-5Z-WeW"/>
+                            <constraint firstItem="6OL-Yc-RL3" firstAttribute="top" secondItem="acR-sl-ate" secondAttribute="top" constant="24" id="wa0-90-Vkb"/>
+                            <constraint firstItem="pmJ-Dg-6QM" firstAttribute="top" secondItem="acR-sl-ate" secondAttribute="top" constant="24" id="zHv-N5-8gr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchButton" destination="6OL-Yc-RL3" id="6ZW-X4-cva"/>
+                        <outlet property="searchTextField" destination="Pux-2V-wfE" id="wOG-h4-UzU"/>
+                        <outlet property="tableView" destination="p2g-Q3-WrW" id="hgC-XW-cgO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZo-gs-e4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,6 +67,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
