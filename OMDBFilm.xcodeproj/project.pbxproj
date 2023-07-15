@@ -50,6 +50,8 @@
 		440EF77C2A6203CE00A62A51 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF77B2A6203CE00A62A51 /* FirebaseRemoteConfigSwift */; };
 		440EF77E2A6203CE00A62A51 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF77D2A6203CE00A62A51 /* FirebaseStorage */; };
 		440EF7802A6203CE00A62A51 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF77F2A6203CE00A62A51 /* FirebaseStorageCombine-Community */; };
+		440EF7862A62B5BA00A62A51 /* FilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF7842A62B5BA00A62A51 /* FilmsTableViewCell.swift */; };
+		440EF7872A62B5BA00A62A51 /* FilmsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */; };
 		4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5952A6199B7009C0C7A /* AppDelegate.swift */; };
 		4431C5982A6199B7009C0C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5972A6199B7009C0C7A /* SceneDelegate.swift */; };
 		4431C59A2A6199B7009C0C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5992A6199B7009C0C7A /* ViewController.swift */; };
@@ -74,6 +76,8 @@
 		440EF73F2A61A27600A62A51 /* HomePageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageWorker.swift; sourceTree = "<group>"; };
 		440EF7402A61A27600A62A51 /* HomePageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
 		440EF7482A62035000A62A51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		440EF7842A62B5BA00A62A51 /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
+		440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsTableViewCell.xib; sourceTree = "<group>"; };
 		4431C5922A6199B7009C0C7A /* OMDBFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDBFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4431C5952A6199B7009C0C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4431C5972A6199B7009C0C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		440EF7392A61A26200A62A51 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				440EF7812A62B58A00A62A51 /* Cell */,
 				440EF73A2A61A27600A62A51 /* HomePage.storyboard */,
 				440EF73B2A61A27600A62A51 /* HomePageViewController.swift */,
 				440EF73C2A61A27600A62A51 /* HomePagePresenter.swift */,
@@ -149,6 +154,15 @@
 				440EF7402A61A27600A62A51 /* HomePageRouter.swift */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		440EF7812A62B58A00A62A51 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				440EF7842A62B5BA00A62A51 /* FilmsTableViewCell.swift */,
+				440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		4431C5892A6199B7009C0C7A = {
@@ -281,6 +295,7 @@
 				440EF7322A619EE500A62A51 /* SplashScreen.storyboard in Resources */,
 				4431C59F2A6199B7009C0C7A /* Assets.xcassets in Resources */,
 				4431C59D2A6199B7009C0C7A /* Main.storyboard in Resources */,
+				440EF7872A62B5BA00A62A51 /* FilmsTableViewCell.xib in Resources */,
 				440EF7492A62035000A62A51 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				440EF7442A61A27600A62A51 /* HomePageInteractor.swift in Sources */,
+				440EF7862A62B5BA00A62A51 /* FilmsTableViewCell.swift in Sources */,
 				440EF7452A61A27600A62A51 /* HomePageModels.swift in Sources */,
 				440EF7372A619EE500A62A51 /* SplashScreenWorker.swift in Sources */,
 				440EF7342A619EE500A62A51 /* SplashScreenPresenter.swift in Sources */,
