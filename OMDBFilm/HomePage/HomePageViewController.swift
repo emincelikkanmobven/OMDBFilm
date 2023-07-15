@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Lottie
 
 protocol HomePageDisplayLogic: AnyObject {
-    
+    func displayLoader(hide: Bool)
 }
 
 final class HomePageViewController: UIViewController {
@@ -58,6 +59,10 @@ final class HomePageViewController: UIViewController {
         self.tableView.register(filmsCell,
                                 forCellReuseIdentifier: "FilmsTableViewCell")
     }
+    
+    @IBAction func searchFilm(_ sender: Any) {
+        self.displayLoader(hide: false)
+    }
 }
 extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,5 +77,19 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension HomePageViewController: HomePageDisplayLogic {
-    
+    func displayLoader(hide: Bool) {
+        let animationView = LottieAnimationView(name: "popcornAnimation")
+        animationView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        animationView.center = view.center
+        animationView.loopMode = .playOnce
+        view.isUserInteractionEnabled = false
+        view.addSubview(animationView)
+        animationView.isHidden = hide
+        animationView.play()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.view.isUserInteractionEnabled = true
+            animationView.isHidden = true
+        }
+        
+    }
 }
