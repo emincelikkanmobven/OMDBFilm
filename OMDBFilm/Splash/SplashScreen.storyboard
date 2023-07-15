@@ -16,18 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOODOSsplash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky0-qZ-DbF">
-                                <rect key="frame" x="106" y="438.5" width="202" height="33"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loodosLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Qxb-kA-HcE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOODOSsplash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky0-qZ-DbF">
+                                <rect key="frame" x="24" y="804" width="366" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="xQa-Dp-6HK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMDBFilm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4R-uI-bqi">
+                                <rect key="frame" x="24" y="72" width="366" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="B5u-Fg-6AH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ky0-qZ-DbF" firstAttribute="centerY" secondItem="acR-sl-ate" secondAttribute="centerY" id="Zae-sI-syA"/>
-                            <constraint firstItem="Ky0-qZ-DbF" firstAttribute="centerX" secondItem="acR-sl-ate" secondAttribute="centerX" id="iWg-CY-dpS"/>
+                            <constraint firstItem="Qxb-kA-HcE" firstAttribute="top" secondItem="chM-je-gA4" secondAttribute="top" id="IPt-Wm-cSD"/>
+                            <constraint firstAttribute="bottom" secondItem="Qxb-kA-HcE" secondAttribute="bottom" id="Ifn-T3-D4a"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="bottom" secondItem="Ky0-qZ-DbF" secondAttribute="bottom" constant="25" id="NR7-Vo-h13"/>
+                            <constraint firstItem="Ky0-qZ-DbF" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="24" id="O5s-Sh-Hbc"/>
+                            <constraint firstItem="O4R-uI-bqi" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="24" id="a1U-4F-yGx"/>
+                            <constraint firstItem="Qxb-kA-HcE" firstAttribute="trailing" secondItem="acR-sl-ate" secondAttribute="trailing" id="h9W-kc-Hks"/>
+                            <constraint firstItem="Qxb-kA-HcE" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" id="l4V-kn-J7f"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="O4R-uI-bqi" secondAttribute="trailing" constant="24" id="x9j-fU-PQv"/>
+                            <constraint firstItem="O4R-uI-bqi" firstAttribute="top" secondItem="acR-sl-ate" secondAttribute="top" constant="24" id="z6J-ty-6xL"/>
+                            <constraint firstItem="Ky0-qZ-DbF" firstAttribute="centerX" secondItem="Qxb-kA-HcE" secondAttribute="centerX" id="z9x-rv-WeM"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="Ky0-qZ-DbF" secondAttribute="trailing" constant="24" id="zuI-H8-u8C"/>
                         </constraints>
                     </view>
                     <connections>
@@ -36,10 +60,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZo-gs-e4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109" y="29"/>
+            <point key="canvasLocation" x="108.69565217391305" y="28.794642857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="loodosLogo" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

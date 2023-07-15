@@ -52,6 +52,8 @@
 		440EF7802A6203CE00A62A51 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF77F2A6203CE00A62A51 /* FirebaseStorageCombine-Community */; };
 		440EF7862A62B5BA00A62A51 /* FilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF7842A62B5BA00A62A51 /* FilmsTableViewCell.swift */; };
 		440EF7872A62B5BA00A62A51 /* FilmsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */; };
+		440EF78A2A62BDC000A62A51 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF7892A62BDC000A62A51 /* Lottie */; };
+		440EF78C2A62BE2A00A62A51 /* popcornAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 440EF78B2A62BE2A00A62A51 /* popcornAnimation.json */; };
 		4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5952A6199B7009C0C7A /* AppDelegate.swift */; };
 		4431C5982A6199B7009C0C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5972A6199B7009C0C7A /* SceneDelegate.swift */; };
 		4431C59A2A6199B7009C0C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5992A6199B7009C0C7A /* ViewController.swift */; };
@@ -78,6 +80,7 @@
 		440EF7482A62035000A62A51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		440EF7842A62B5BA00A62A51 /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
 		440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsTableViewCell.xib; sourceTree = "<group>"; };
+		440EF78B2A62BE2A00A62A51 /* popcornAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = popcornAnimation.json; sourceTree = "<group>"; };
 		4431C5922A6199B7009C0C7A /* OMDBFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDBFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4431C5952A6199B7009C0C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4431C5972A6199B7009C0C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 				440EF7662A6203CE00A62A51 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				440EF7502A6203CE00A62A51 /* FirebaseAnalyticsSwift in Frameworks */,
 				440EF7742A6203CE00A62A51 /* FirebaseMLModelDownloader in Frameworks */,
+				440EF78A2A62BDC000A62A51 /* Lottie in Frameworks */,
 				440EF7522A6203CE00A62A51 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				440EF74C2A6203CE00A62A51 /* FirebaseAnalytics in Frameworks */,
 				440EF7682A6203CE00A62A51 /* FirebaseFirestoreSwift in Frameworks */,
@@ -194,6 +198,7 @@
 				4431C59E2A6199B7009C0C7A /* Assets.xcassets */,
 				4431C5A02A6199B7009C0C7A /* LaunchScreen.storyboard */,
 				4431C5A32A6199B7009C0C7A /* Info.plist */,
+				440EF78B2A62BE2A00A62A51 /* popcornAnimation.json */,
 			);
 			path = OMDBFilm;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				440EF77B2A6203CE00A62A51 /* FirebaseRemoteConfigSwift */,
 				440EF77D2A6203CE00A62A51 /* FirebaseStorage */,
 				440EF77F2A6203CE00A62A51 /* FirebaseStorageCombine-Community */,
+				440EF7892A62BDC000A62A51 /* Lottie */,
 			);
 			productName = OMDBFilm;
 			productReference = 4431C5922A6199B7009C0C7A /* OMDBFilm.app */;
@@ -275,6 +281,7 @@
 			packageReferences = (
 				440EF7272A619D2D00A62A51 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				440EF74A2A6203CE00A62A51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				440EF7882A62BDC000A62A51 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 4431C5932A6199B7009C0C7A /* Products */;
 			projectDirPath = "";
@@ -294,6 +301,7 @@
 				4431C5A22A6199B7009C0C7A /* LaunchScreen.storyboard in Resources */,
 				440EF7322A619EE500A62A51 /* SplashScreen.storyboard in Resources */,
 				4431C59F2A6199B7009C0C7A /* Assets.xcassets in Resources */,
+				440EF78C2A62BE2A00A62A51 /* popcornAnimation.json in Resources */,
 				4431C59D2A6199B7009C0C7A /* Main.storyboard in Resources */,
 				440EF7872A62B5BA00A62A51 /* FilmsTableViewCell.xib in Resources */,
 				440EF7492A62035000A62A51 /* GoogleService-Info.plist in Resources */,
@@ -560,6 +568,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		440EF7882A62BDC000A62A51 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -702,6 +718,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 440EF74A2A6203CE00A62A51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		440EF7892A62BDC000A62A51 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 440EF7882A62BDC000A62A51 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
