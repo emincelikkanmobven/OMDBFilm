@@ -13,6 +13,9 @@ protocol HomePageDisplayLogic: AnyObject {
 
 final class HomePageViewController: UIViewController {
     
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var searchButton: UIButton!
+    @IBOutlet var searchTextField: UITextField!
     var interactor: HomePageBusinessLogic?
     var router: (HomePageRoutingLogic & HomePageDataPassing)?
     
@@ -26,6 +29,12 @@ final class HomePageViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+        registerTableViewCells()
     }
     
     // MARK: Setup
@@ -41,6 +50,24 @@ final class HomePageViewController: UIViewController {
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
+    }
+    
+    private func registerTableViewCells() {
+        let filmsCell = UINib(nibName: "FilmsTableViewCell",
+                                  bundle: nil)
+        self.tableView.register(filmsCell,
+                                forCellReuseIdentifier: "FilmsTableViewCell")
+    }
+}
+extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let filmCell = tableView.dequeueReusableCell(withIdentifier: "FilmsTableViewCell", for: indexPath) as? FilmsTableViewCell ?? UITableViewCell()
+        
+        return filmCell
     }
 }
 
