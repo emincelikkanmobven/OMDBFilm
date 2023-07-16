@@ -1,7 +1,14 @@
 # OMDBFilm
 OMDBFilm is an application that users can search a film or series by using the , and see the details of it.
 
-#3RD Party Tools<br />
+### App Demo
+
+
+https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/ab4f65be-2366-43bc-b771-0a9dbc626bda
+
+
+
+##3RD Party Tools<br />
 Lottie<br />
 Alamofire<br />
 AlamofireImage<br />
@@ -21,6 +28,4 @@ Whenever the user shows the detail of a Result, an application sends an Event to
 <img width="511" alt="Ekran Resmi 2023-07-16 12 32 09" src="https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/c099ad60-75ef-4054-bd33-536add76ff8c">
 <img width="511" alt="Ekran Resmi 2023-07-16 12 32 15" src="https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/98092e8a-baa6-4894-ace8-b5350206da6b">
 <img width="511" alt="Ekran Resmi 2023-07-16 12 32 21" src="https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/f4401c7c-9f79-466f-8620-e3fcad491ded">
-
-
 
