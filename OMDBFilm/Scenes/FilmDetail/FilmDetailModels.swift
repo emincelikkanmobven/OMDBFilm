@@ -15,25 +15,10 @@ enum FilmDetail {
         }
         
         struct Response {
-            
         }
         
     struct ViewModel {
-         struct FilmViewModel {
-            var title: String?
-            var year: String?
-            var rated: String?
-            var released: String?
-            var genre: String?
-            var director: String?
-            var ratings: [Rating]?
-            var type: String?
-            var poster: String?
-            var imdbRating: String?
-            var metaScore: String?
-            var plot: String?
-            var revenue: String?
-        }
+        var viewModel: HomePage.ViewModel.FilmViewModel?
     }
 }
 // swiftlint:enable nesting

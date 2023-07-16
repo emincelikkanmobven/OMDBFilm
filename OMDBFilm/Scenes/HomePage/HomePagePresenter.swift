@@ -39,7 +39,11 @@ final class HomePagePresenter: HomePagePresentationLogic {
             imdbRating: filmResponse.imdbRating,
             metaScore: filmResponse.metascore,
             plot: filmResponse.plot,
-            revenue: filmResponse.boxOffice
+            revenue: filmResponse.boxOffice,
+            awards: filmResponse.awards,
+            actors: filmResponse.actors,
+            language: filmResponse.language,
+            country: filmResponse.country
            )
            
            viewController?.displayFilms(viewModel: filmsViewModel)

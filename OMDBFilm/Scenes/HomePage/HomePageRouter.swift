@@ -28,7 +28,7 @@ final class HomePageRouter: HomePageRoutingLogic, HomePageDataPassing {
         if let filmDetailViewController = storyboard.instantiateViewController(
             withIdentifier: "FilmDetailViewController"
         ) as? FilmDetailViewController {
-            filmDetailViewController.router?.dataStore?.viewModel = viewModel
+            filmDetailViewController.router?.dataStore?.selectedFilmModel = viewModel
             viewController.present(filmDetailViewController, animated: true)
         }
         
