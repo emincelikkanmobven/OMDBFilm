@@ -89,6 +89,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let filmCell = tableView.dequeueReusableCell(withIdentifier: "FilmsTableViewCell", for: indexPath) as? FilmsTableViewCell ?? FilmsTableViewCell(style: .default, reuseIdentifier: "FilmsTableViewCell")
+        filmCell.selectionStyle = .none
         filmCell.viewModel = filmList?[indexPath.row]
         filmCell.setUpCell()
         return filmCell
@@ -135,9 +136,9 @@ extension HomePageViewController: HomePageDisplayLogic {
     }
     
     func displayFilms(viewModel: HomePage.ViewModel.FilmViewModel) {
-        // Since the API Service doesn't gives any list response, app is designed
-        // to be able to add every single response to the film list and show
-        // in the Table View
+        //// Since the API Service doesn't gives any list response, app is designed
+        //// to be able to add every single response to the film list and show
+        //// in the Table View
         self.filmList?.insert(viewModel, at: 0)
         tableView.isHidden = false
         tableView.reloadData()
@@ -154,10 +155,12 @@ extension HomePageViewController: HomePageDisplayLogic {
        
         view.addSubview(animationView ?? LottieAnimationView(animation: .none))
             if isVisible {
+                view.isUserInteractionEnabled = !isVisible
                 animationView?.play()
                 animationView?.isHidden = !isVisible
 
             } else {
+                view.isUserInteractionEnabled = !isVisible
                 animationView?.stop()
                 animationView?.isHidden = !isVisible
             }
