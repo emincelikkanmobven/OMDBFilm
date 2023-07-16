@@ -33,6 +33,10 @@ enum HomePage {
                 var metaScore: String?
                 var plot: String?
                 var revenue: String?
+                var awards: String?
+                var actors: String?
+                var language: String?
+                var country: String?
             }
         }
         
