@@ -12,8 +12,8 @@ By using Alamofire NetworkManager, connection status checked at the splash scree
 ![Simulator Screenshot - iPhone 14 Pro - 2023-07-16 at 10 27 10](https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/a85b85f5-3219-4c55-a36e-89b2f0a2f04c)
 
 Lottie used while user makes a search untill the response comes and results are shown in TableView
-![Simulator Screenshot - iPhone 14 Pro - 2023-07-16 at 13 00 30](https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/c35d2d3a-1782-4fbb-89f0-0cb55b946ccc) <br /> 
-![Uploading Simulator Screenshot - iPhone 14 Pro - 2023-07-16 at 17.23.32.png…]() <br /> 
+![Simulator Screenshot - iPhone 14 Pro - 2023-07-16 at 13 00 30](https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/c35d2d3a-1782-4fbb-89f0-0cb55b946ccc) <br />
+![Simulator Screenshot - iPhone 14 Pro - 2023-07-16 at 17 23 32](https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/7fc8ce17-9f85-486e-9aea-f32e09715645)<br /> 
 
 Whenever the user shows the detail of a Result, an application sends an Event to the Firebase <br /> 
 <img width="385" alt="Ekran Resmi 2023-07-16 12 31 56" src="https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/d6cdae26-b12a-4e01-afc6-0b878faaa292">
