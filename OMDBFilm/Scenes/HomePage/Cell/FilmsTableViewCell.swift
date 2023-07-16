@@ -71,14 +71,14 @@ public class FilmsTableViewCell: UITableViewCell {
             break
         }
 
-        self.directorLabel.text = viewModel?.director
+        self.directorLabel.text = viewModel?.director != "N/A" ? viewModel?.director : "Yönetmen Bulunamadı"
         self.filmTypeLabel.text = viewModel?.genre
         self.filmTitleLabel.text = viewModel?.title
         self.filmDescriptionTextView.text = viewModel?.plot
         self.filmReleaseDate.text = viewModel?.released
-        self.imdbRatingLabel.text = viewModel?.imdbRating != "N/A" ? viewModel?.imdbRating : "Deger Bulunamadi"
-        self.metaScoreLabel.text = viewModel?.metaScore != "N/A" ? viewModel?.metaScore : "Deger Bulunamadi"
-        self.revenueLabel.text = viewModel?.revenue
+        self.imdbRatingLabel.text = viewModel?.imdbRating != "N/A" ? viewModel?.imdbRating : "Değer Bulunamadı"
+        self.metaScoreLabel.text = viewModel?.metaScore != "N/A" ? viewModel?.metaScore : "Değer Bulunamadı"
+        self.revenueLabel.text = viewModel?.revenue != nil ? viewModel?.revenue : "Gelir Bulunamadı"
         if let posterURL = viewModel?.poster {
                 getPosterImage(from: URL(string: posterURL), to: filmImageView)
             }

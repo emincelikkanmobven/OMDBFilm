@@ -47,8 +47,8 @@ final class SplashScreenInteractor: SplashScreenBusinessLogic, SplashScreenDataS
                      }
         } else {
             //Presenting Error message decided there instead of presenter, to any case if service response has any
-            // error message parameters. otherwise these parameters should be decided at presenter.
-            presenter?.presentErrorWithMessage("Internet Baglantinizi Kontrol Ediniz.")
+            // error message parameters. otherwise these error message should be decided at presenter.
+            presenter?.presentErrorWithMessage("Lütfen İnternet Bağlantınızı kontrol edip tekrar deneyiniz.")
         }
     }
 
