@@ -56,6 +56,13 @@
 		440EF78C2A62BE2A00A62A51 /* popcornAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 440EF78B2A62BE2A00A62A51 /* popcornAnimation.json */; };
 		440EF7902A62D27000A62A51 /* FilmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF78F2A62D27000A62A51 /* FilmResponse.swift */; };
 		440EF7932A62E3BC00A62A51 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 440EF7922A62E3BC00A62A51 /* AlamofireImage */; };
+		440EF79D2A6313B800A62A51 /* FilmDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440EF7962A6313B800A62A51 /* FilmDetail.storyboard */; };
+		440EF79E2A6313B800A62A51 /* FilmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF7972A6313B800A62A51 /* FilmDetailViewController.swift */; };
+		440EF79F2A6313B800A62A51 /* FilmDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF7982A6313B800A62A51 /* FilmDetailPresenter.swift */; };
+		440EF7A02A6313B800A62A51 /* FilmDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF7992A6313B800A62A51 /* FilmDetailInteractor.swift */; };
+		440EF7A12A6313B800A62A51 /* FilmDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF79A2A6313B800A62A51 /* FilmDetailModels.swift */; };
+		440EF7A22A6313B800A62A51 /* FilmDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF79B2A6313B800A62A51 /* FilmDetailWorker.swift */; };
+		440EF7A32A6313B800A62A51 /* FilmDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440EF79C2A6313B800A62A51 /* FilmDetailRouter.swift */; };
 		4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5952A6199B7009C0C7A /* AppDelegate.swift */; };
 		4431C5982A6199B7009C0C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5972A6199B7009C0C7A /* SceneDelegate.swift */; };
 		4431C59A2A6199B7009C0C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5992A6199B7009C0C7A /* ViewController.swift */; };
@@ -84,6 +91,13 @@
 		440EF7852A62B5BA00A62A51 /* FilmsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsTableViewCell.xib; sourceTree = "<group>"; };
 		440EF78B2A62BE2A00A62A51 /* popcornAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = popcornAnimation.json; sourceTree = "<group>"; };
 		440EF78F2A62D27000A62A51 /* FilmResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmResponse.swift; sourceTree = "<group>"; };
+		440EF7962A6313B800A62A51 /* FilmDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilmDetail.storyboard; sourceTree = "<group>"; };
+		440EF7972A6313B800A62A51 /* FilmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewController.swift; sourceTree = "<group>"; };
+		440EF7982A6313B800A62A51 /* FilmDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailPresenter.swift; sourceTree = "<group>"; };
+		440EF7992A6313B800A62A51 /* FilmDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailInteractor.swift; sourceTree = "<group>"; };
+		440EF79A2A6313B800A62A51 /* FilmDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailModels.swift; sourceTree = "<group>"; };
+		440EF79B2A6313B800A62A51 /* FilmDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailWorker.swift; sourceTree = "<group>"; };
+		440EF79C2A6313B800A62A51 /* FilmDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailRouter.swift; sourceTree = "<group>"; };
 		4431C5922A6199B7009C0C7A /* OMDBFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDBFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4431C5952A6199B7009C0C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4431C5972A6199B7009C0C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +203,30 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		440EF7942A63138300A62A51 /* FilmDetail */ = {
+			isa = PBXGroup;
+			children = (
+				440EF7962A6313B800A62A51 /* FilmDetail.storyboard */,
+				440EF7972A6313B800A62A51 /* FilmDetailViewController.swift */,
+				440EF7982A6313B800A62A51 /* FilmDetailPresenter.swift */,
+				440EF7992A6313B800A62A51 /* FilmDetailInteractor.swift */,
+				440EF79A2A6313B800A62A51 /* FilmDetailModels.swift */,
+				440EF79B2A6313B800A62A51 /* FilmDetailWorker.swift */,
+				440EF79C2A6313B800A62A51 /* FilmDetailRouter.swift */,
+			);
+			path = FilmDetail;
+			sourceTree = "<group>";
+		};
+		440EF7952A63139300A62A51 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				440EF72A2A619EC900A62A51 /* Splash */,
+				440EF7392A61A26200A62A51 /* HomePage */,
+				440EF7942A63138300A62A51 /* FilmDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		4431C5892A6199B7009C0C7A = {
 			isa = PBXGroup;
 			children = (
@@ -209,9 +247,8 @@
 		4431C5942A6199B7009C0C7A /* OMDBFilm */ = {
 			isa = PBXGroup;
 			children = (
+				440EF7952A63139300A62A51 /* Scenes */,
 				440EF78D2A62D24D00A62A51 /* Networking */,
-				440EF7392A61A26200A62A51 /* HomePage */,
-				440EF72A2A619EC900A62A51 /* Splash */,
 				4431C5952A6199B7009C0C7A /* AppDelegate.swift */,
 				4431C5972A6199B7009C0C7A /* SceneDelegate.swift */,
 				4431C5992A6199B7009C0C7A /* ViewController.swift */,
@@ -322,6 +359,7 @@
 			files = (
 				440EF7412A61A27600A62A51 /* HomePage.storyboard in Resources */,
 				4431C5A22A6199B7009C0C7A /* LaunchScreen.storyboard in Resources */,
+				440EF79D2A6313B800A62A51 /* FilmDetail.storyboard in Resources */,
 				440EF7322A619EE500A62A51 /* SplashScreen.storyboard in Resources */,
 				4431C59F2A6199B7009C0C7A /* Assets.xcassets in Resources */,
 				440EF78C2A62BE2A00A62A51 /* popcornAnimation.json in Resources */,
@@ -338,23 +376,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440EF7A32A6313B800A62A51 /* FilmDetailRouter.swift in Sources */,
 				440EF7442A61A27600A62A51 /* HomePageInteractor.swift in Sources */,
 				440EF7862A62B5BA00A62A51 /* FilmsTableViewCell.swift in Sources */,
 				440EF7452A61A27600A62A51 /* HomePageModels.swift in Sources */,
+				440EF79E2A6313B800A62A51 /* FilmDetailViewController.swift in Sources */,
 				440EF7372A619EE500A62A51 /* SplashScreenWorker.swift in Sources */,
 				440EF7342A619EE500A62A51 /* SplashScreenPresenter.swift in Sources */,
 				440EF7382A619EE500A62A51 /* SplashScreenRouter.swift in Sources */,
 				440EF7352A619EE500A62A51 /* SplashScreenInteractor.swift in Sources */,
+				440EF7A12A6313B800A62A51 /* FilmDetailModels.swift in Sources */,
+				440EF79F2A6313B800A62A51 /* FilmDetailPresenter.swift in Sources */,
 				4431C59A2A6199B7009C0C7A /* ViewController.swift in Sources */,
 				440EF7462A61A27600A62A51 /* HomePageWorker.swift in Sources */,
 				4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */,
 				440EF7362A619EE500A62A51 /* SplashScreenModels.swift in Sources */,
+				440EF7A22A6313B800A62A51 /* FilmDetailWorker.swift in Sources */,
 				440EF7902A62D27000A62A51 /* FilmResponse.swift in Sources */,
 				440EF7332A619EE500A62A51 /* SplashScreenViewController.swift in Sources */,
 				440EF7422A61A27600A62A51 /* HomePageViewController.swift in Sources */,
 				440EF7432A61A27600A62A51 /* HomePagePresenter.swift in Sources */,
 				440EF7472A61A27600A62A51 /* HomePageRouter.swift in Sources */,
 				4431C5982A6199B7009C0C7A /* SceneDelegate.swift in Sources */,
+				440EF7A02A6313B800A62A51 /* FilmDetailInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,8 +549,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OMDBFilm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
-				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -534,8 +577,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OMDBFilm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
-				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

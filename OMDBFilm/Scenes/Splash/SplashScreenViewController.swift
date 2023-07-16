@@ -66,8 +66,10 @@ extension SplashScreenViewController: SplashScreenDisplayLogic {
     }
     
     func displayErrorWithMessage(_ message: String) {
-        //TODO: This will changed to the Alert
-        print("Error Occured")
+        let alertController = UIAlertController(title: "Bağlantı Problemi", message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Tamam", style: .default)
+        alertController.addAction(alertAction)
+        self.present(alertController, animated: true)
     }
     
     func displayHomePage() {
