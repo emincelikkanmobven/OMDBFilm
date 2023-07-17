@@ -51,7 +51,6 @@
 		443146A82A647663002B44BB /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 443146A72A647663002B44BB /* FirebaseRemoteConfig */; };
 		4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5952A6199B7009C0C7A /* AppDelegate.swift */; };
 		4431C5982A6199B7009C0C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5972A6199B7009C0C7A /* SceneDelegate.swift */; };
-		4431C59D2A6199B7009C0C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4431C59B2A6199B7009C0C7A /* Main.storyboard */; };
 		4431C59F2A6199B7009C0C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4431C59E2A6199B7009C0C7A /* Assets.xcassets */; };
 		4431C5A22A6199B7009C0C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4431C5A02A6199B7009C0C7A /* LaunchScreen.storyboard */; };
 		4489553E2A654AB3000CF714 /* FilmDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489553D2A654AB3000CF714 /* FilmDetailViewControllerTest.swift */; };
@@ -104,7 +103,6 @@
 		4431C5922A6199B7009C0C7A /* OMDBFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDBFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4431C5952A6199B7009C0C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4431C5972A6199B7009C0C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4431C59C2A6199B7009C0C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4431C59E2A6199B7009C0C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4431C5A12A6199B7009C0C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4431C5A32A6199B7009C0C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 				440EF78D2A62D24D00A62A51 /* Networking */,
 				4431C5952A6199B7009C0C7A /* AppDelegate.swift */,
 				4431C5972A6199B7009C0C7A /* SceneDelegate.swift */,
-				4431C59B2A6199B7009C0C7A /* Main.storyboard */,
 				4431C59E2A6199B7009C0C7A /* Assets.xcassets */,
 				4431C5A02A6199B7009C0C7A /* LaunchScreen.storyboard */,
 				4431C5A32A6199B7009C0C7A /* Info.plist */,
@@ -437,7 +434,6 @@
 				440EF7322A619EE500A62A51 /* SplashScreen.storyboard in Resources */,
 				4431C59F2A6199B7009C0C7A /* Assets.xcassets in Resources */,
 				440EF78C2A62BE2A00A62A51 /* popcornAnimation.json in Resources */,
-				4431C59D2A6199B7009C0C7A /* Main.storyboard in Resources */,
 				440EF7872A62B5BA00A62A51 /* FilmsTableViewCell.xib in Resources */,
 				440EF7492A62035000A62A51 /* GoogleService-Info.plist in Resources */,
 			);
@@ -495,14 +491,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4431C59B2A6199B7009C0C7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4431C59C2A6199B7009C0C7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4431C5A02A6199B7009C0C7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -678,7 +666,7 @@
 				INFOPLIST_FILE = OMDBFilm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -706,7 +694,7 @@
 				INFOPLIST_FILE = OMDBFilm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
