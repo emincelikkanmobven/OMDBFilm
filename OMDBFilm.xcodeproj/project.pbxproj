@@ -51,7 +51,6 @@
 		443146A82A647663002B44BB /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 443146A72A647663002B44BB /* FirebaseRemoteConfig */; };
 		4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5952A6199B7009C0C7A /* AppDelegate.swift */; };
 		4431C5982A6199B7009C0C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5972A6199B7009C0C7A /* SceneDelegate.swift */; };
-		4431C59A2A6199B7009C0C7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431C5992A6199B7009C0C7A /* ViewController.swift */; };
 		4431C59D2A6199B7009C0C7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4431C59B2A6199B7009C0C7A /* Main.storyboard */; };
 		4431C59F2A6199B7009C0C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4431C59E2A6199B7009C0C7A /* Assets.xcassets */; };
 		4431C5A22A6199B7009C0C7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4431C5A02A6199B7009C0C7A /* LaunchScreen.storyboard */; };
@@ -105,7 +104,6 @@
 		4431C5922A6199B7009C0C7A /* OMDBFilm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDBFilm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4431C5952A6199B7009C0C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4431C5972A6199B7009C0C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4431C5992A6199B7009C0C7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4431C59C2A6199B7009C0C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4431C59E2A6199B7009C0C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4431C5A12A6199B7009C0C7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -298,7 +296,6 @@
 				440EF78D2A62D24D00A62A51 /* Networking */,
 				4431C5952A6199B7009C0C7A /* AppDelegate.swift */,
 				4431C5972A6199B7009C0C7A /* SceneDelegate.swift */,
-				4431C5992A6199B7009C0C7A /* ViewController.swift */,
 				4431C59B2A6199B7009C0C7A /* Main.storyboard */,
 				4431C59E2A6199B7009C0C7A /* Assets.xcassets */,
 				4431C5A02A6199B7009C0C7A /* LaunchScreen.storyboard */,
@@ -473,7 +470,6 @@
 				440EF7352A619EE500A62A51 /* SplashScreenInteractor.swift in Sources */,
 				440EF7A12A6313B800A62A51 /* FilmDetailModels.swift in Sources */,
 				440EF79F2A6313B800A62A51 /* FilmDetailPresenter.swift in Sources */,
-				4431C59A2A6199B7009C0C7A /* ViewController.swift in Sources */,
 				440EF7462A61A27600A62A51 /* HomePageWorker.swift in Sources */,
 				4431C5962A6199B7009C0C7A /* AppDelegate.swift in Sources */,
 				440EF7362A619EE500A62A51 /* SplashScreenModels.swift in Sources */,
