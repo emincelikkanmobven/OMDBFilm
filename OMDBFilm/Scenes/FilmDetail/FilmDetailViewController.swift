@@ -187,11 +187,11 @@ extension FilmDetailViewController: FilmDetailDisplayLogic {
         }
         
         switch metaScore {
-        case 0..<4:
+        case 0..<40:
             metaScoreRatingLabel.textColor = UIColor.red
-        case 4..<7:
+        case 40..<70:
             metaScoreRatingLabel.textColor = UIColor.orange
-        case 7...:
+        case 70...:
             metaScoreRatingLabel.textColor = UIColor.green
         default:
             break

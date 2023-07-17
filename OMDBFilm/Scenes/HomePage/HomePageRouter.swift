@@ -29,6 +29,7 @@ final class HomePageRouter: HomePageRoutingLogic, HomePageDataPassing {
             withIdentifier: "FilmDetailViewController"
         ) as? FilmDetailViewController {
             filmDetailViewController.router?.dataStore?.selectedFilmModel = viewModel
+            ////Since the viewController.navigationController is nil even it's embedded in storyboard, present function used
             viewController.present(filmDetailViewController, animated: true)
         }
         

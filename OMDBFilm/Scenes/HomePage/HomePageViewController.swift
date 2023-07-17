@@ -67,6 +67,7 @@ final class HomePageViewController: UIViewController {
         animationView?.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         animationView?.center = view.center
         animationView?.loopMode = .loop
+        animationView?.isHidden = true
         tableView.isHidden = true
         textFieldStackView.isHidden = true
     }
