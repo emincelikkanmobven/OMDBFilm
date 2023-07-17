@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "46D0CC5A-1F76-4B9D-B138-88BB94B82EAE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "FIRAnalyticsDebugEnabled"
+      },
+      {
+        "argument" : "FIRAnalyticsVerboseLoggingEnabled"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:OMDBFilm.xcodeproj",
+      "identifier" : "4431C5912A6199B7009C0C7A",
+      "name" : "OMDBFilm"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:OMDBFilm.xcodeproj",
+        "identifier" : "4431469A2A647519002B44BB",
+        "name" : "OMDBFilmTests"
+      }
+    }
+  ],
+  "version" : 1
+}
