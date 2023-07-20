@@ -1,13 +1,6 @@
 # OMDBFilm
 OMDBFilm is an application that users can search a film or series by using the http://www.omdbapi.com ,and see the details of it.
 
-### App Demo
-
-
-https://github.com/emincelikkanmobven/OMDBFilm/assets/88652048/ab4f65be-2366-43bc-b771-0a9dbc626bda
-
-
-
 ##3RD Party Tools<br />
 Lottie<br />
 Alamofire<br />
